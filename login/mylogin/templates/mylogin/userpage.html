@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER PAGE</title>
+</head>
+<body>
+    <ul>
+        <li>First name : {{request.user.first_name}}</li>
+        <li>Username : {{request.user.username}}</li>
+        <li>Password : {{request.user.password}}</li>
+        <li>Email : {{request.user.email}}</li>
+    </ul>
+    <a href="{% url 'mylogin:logout_views' %}">log out</a>
+</body>
+</html>
